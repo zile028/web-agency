@@ -1,0 +1,43 @@
+body {
+    font-family: $fontFamilyBody;
+    font-size: $fontSize;
+    color: $tamnoSiva;
+    line-height: 1.6;
+    font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontFamilyHeadings;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+i {
+    transition: opacity $transition;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.6;
+    }
+}
